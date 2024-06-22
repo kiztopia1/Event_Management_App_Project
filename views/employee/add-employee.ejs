@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create New Employee</title>
+    <link rel="stylesheet" href="/path/to/your/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Create New Employee</h1>
+      <form action="/employees" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="year_of_experience">Years of Experience:</label>
+          <input
+            type="number"
+            id="year_of_experience"
+            name="year_of_experience"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required />
+        </div>
+        <div class="form-group">
+          <button type="submit">Create Employee</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
